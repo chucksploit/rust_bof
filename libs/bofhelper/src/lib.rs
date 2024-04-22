@@ -59,6 +59,7 @@ macro_rules! import_internal_function {
     }
 }
 
+/* 
 #[cfg(target_arch = "x86")]
 import_function!(NTDLL!_chkstk(), "cdecl");
 #[cfg(target_arch = "x86")]
@@ -66,6 +67,7 @@ import_function!(NTDLL!_chkstk(), "cdecl");
 unsafe extern "C" fn __chkstk() {
     _chkstk()
 }
+*/
 
 #[repr(C)]
 pub(crate) struct _BOFData {
